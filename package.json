@@ -1,0 +1,26 @@
+{
+  "name": "proyectojm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "build-css": "node-sass --include-path scss scss/style.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanLatorre/CoderHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GermanLatorre/CoderHouse/issues"
+  },
+  "homepage": "https://github.com/GermanLatorre/CoderHouse#readme",
+  "devDependencies": {
+    "node": "^18.10.0",
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  }
+}

@@ -1,0 +1,483 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+}
+
+nav{
+  margin-top: 10%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  align-content: center;
+  color: chocolate;
+  font-weight: lighter;
+  margin-right:  2rem;
+}
+main {
+  margin-top: 2%;
+  width: 100%;
+} 
+h1{
+  color: black;
+  width:  1px yellow;
+  font-style: light ;
+  text-align: center ;
+  font-size: 50px;
+  font-family: g;
+}
+h2 {
+  color:chocolate;
+  -webkit-text-stroke: 1px black;
+  font-size: 2rem;
+  margin-left: 1%;
+  margin-bottom: 5%;
+}
+h3{
+  color: brown;
+}
+h4{
+  font-size: 2rem;
+}
+h5{
+  font-size: 2rem;
+}
+footer{
+  background-color: chocolate;
+  display: flex;
+  height: 220px;
+  
+}
+footer p{
+  font-weight: bold;
+  font-size: 20px;
+  font-display:center;
+  color: white 150px ;
+  font-size: 20px;
+}
+footer img{
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 10%;
+  
+}
+footer form{
+  margin-top: 23px;
+  margin-left: 23px;
+}
+.header-logo img{
+  width: 25rem;
+}
+
+.header-iconos img{
+  width: 2rem;
+  height: 2rem;    
+}
+.section p{
+  font-size: 2rem;
+  
+}
+
+.parallax {
+  background-image: url(img/fondo.jpg);
+  opacity: 0.5;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+} 
+.video_container {
+  display: flex;
+  justify-content: center;
+}
+
+.video_container iframe {
+  width: 500px;
+  height: 300px;
+}
+.parrafo p{
+  margin-left: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+}
+.web{
+  margin-top: 10rem;
+  font-size: 1rem;
+  
+}
+
+/*menu*/
+.contenedor-menu{
+  display: block;
+  font-size: x-large !important;
+  text-align: left !important;
+
+}
+.submenu{
+  display:none;
+}
+.submenu{
+  background: chocolate;              
+  width:170px;
+  text-align:center; 
+}
+.menu ul:hover > .submenu
+{
+  display: inline-block;
+}
+/*sobre nosotros*/
+.sobre-nosotros{
+  background-color: bisque;
+}
+.container-propio p{
+  background-color: burlywood;
+  margin-left: 18%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*promociones*/
+.promo-ul li{
+  font-size: 2rem;
+  color:chocolate;
+  -webkit-text-stroke: 1px black;
+  
+}
+.carta1p{
+  background-color: burlywood;
+  margin-left: 10%;
+  border: 2px solid grey;
+   
+ }
+ .carta2p{
+   background-color: burlywood;
+   border: 2px solid grey;
+ }
+ .carta3p{
+   background-color: burlywood;
+   border: 2px solid grey;  
+ }
+ .carta3p img{
+   height: 14rem;
+ }
+ .promociones{
+   margin-bottom: 5%;
+ }
+
+.postres{
+  margin-left: 10%;
+  margin-right: 5%;
+  box-shadow:  50px chocolate;
+  transform: translate(10px 20px);
+  }
+.container-promo{
+  margin-bottom: 10%;
+}
+/*infantiles*/
+.carta1t{
+
+  background-color:burlywood;
+  
+}
+.carta2t{
+  background-color: burlywood;
+}
+.carta3t{
+  background-color: burlywood;
+}
+.carta4t{
+  background-color: burlywood;
+  margin-top: 10%;
+}
+.carta5t{
+  background-color: burlywood;
+}
+.carta5t img{
+  height: 24rem;
+}
+.carta6t{
+  background-color: burlywood;
+  margin-top: 10%;
+}
+.carta4t img{
+  height: 18rem;
+}
+.carta5t img{
+  height: 18rem;
+  }
+.carta6t img{
+height: 18rem;
+}
+.trufas{
+  margin-bottom: 5%;
+  }
+/*promociones*/
+  .carta1p{
+   background-color: burlywood;
+   margin-left: 10%;
+   border: 2px solid grey;
+  
+  }
+  .carta2p{
+   background-color: burlywood;
+   border: 2px solid grey;
+  }
+  .carta3p{
+   background-color: burlywood;
+   border: 2px solid grey;  
+  }
+  .carta3p img{
+   height: 14rem;
+  }
+  .promociones{
+   margin-bottom: 5%;
+  }
+/*día del padre*/
+  .carta1{
+
+    background-color:burlywood;
+    
+  }
+  .carta2{
+    background-color: burlywood;
+  }
+  .carta3{
+    background-color: burlywood;
+  }
+  .carta4{
+    background-color: burlywood;
+    margin-top: 10%;
+  }
+  .carta5{
+    background-color: burlywood;
+    margin-top: 10%;
+    
+  }
+  .carta5 img{
+    height: 24rem;
+  }
+  .carta6{
+    background-color: burlywood;
+    margin-top: 10%;
+  }
+  .desayuno-lista p{
+    font-size: 2rem;
+    color: brown;
+    
+  }
+  .desayuno-lista ul{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chocolate;
+  }
+  .postres{
+    margin-bottom: 5%;
+  }
+  .btn-propio{
+    background-color: dimgray;
+    border-color: black;
+    
+  }
+  .btn-propio a:hover{
+    color:yellow;
+  }
+  .postres p{
+    font-size: 2rem;
+    
+  }
+  .container-promo {
+    font-size: 1rem;
+  }
+
+  /*galería*/
+.contenedor-galeria img{
+  width: 20rem;
+  height: 20rem;
+  
+  }
+  .contenedor-galeria p{
+    font-size: 2rem;
+    margin-left: 15%;
+  }
+  .super-galeria{
+    margin-left: 2%;
+  }
+  .super-galeria img{
+  height: 20rem;
+  width: 20rem;
+  }
+  .super-galeria img:hover{
+  transform:scale(1.2);
+  transition:all 3s;
+  }
+ 
+ /*transformaciones*/
+ .header-nav a:hover{
+color: brown;
+ }
+ h1:hover{
+  transform:scale(1.2);
+  transition:all 2s;
+}
+.grid-sub-h2{
+  transition:all 0.7s;
+}
+.animacion{
+    width: 120px;
+    height: 120px;
+    margin:0 0 200px 50px;
+    background-color: aquamarine;
+  
+}
+.img-pos:hover{
+    animation: cambioDeColores 5s;
+  
+}
+
+.container-propio{
+  font-size: 2rem;
+  margin: 0%;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+
+  /*inicio*/
+  header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
+  .header-logo img{
+    width: 7rem;
+  }
+
+nav{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30%;
+
+}
+nav a{
+  font-size: 100%;
+}
+
+main img{
+  
+  width: 97%
+}
+h1{
+  
+  margin-left: 30%;
+  font-size: 200%;
+  display: inline;
+}
+h2{
+  display: flex;
+  font-size: 150%;
+}
+section h1{
+  margin-left: 14%;
+}
+section p{
+ width: 65%;
+ margin-left: 15%;
+
+}
+.parrafo p{
+  margin-left:30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+}
+.video_container{
+  margin-left: 15%;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 40px;
+   
+}
+ footer form{
+  width: 5%;
+}
+.video_container{
+  width: 72%;
+}
+.parrafo {
+  width: 65%;
+}
+.postres{
+  
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+.postres img{
+  width: 15rem;
+  height: 15rem;
+}
+.img-pos{
+  width: 42%;
+  border: 1rem solid chocolate;
+  border-radius: 8%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  }
+  .contenedor-galeria{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+  .postres p{
+    align-items: center;
+
+  }
+  /*promociones*/
+
+  .carta1t{
+    margin-top: 5%;
+  }
+  .carta2t{
+    margin-top: 5%;
+      }
+  .carta3t{
+    margin-top: 5%;
+      }
+  .carta4t{
+    margin-top: 5%;
+      }
+  .carta5t{
+    margin-top: 5%;
+      }
+  .carta6t{
+    margin-top: 5%;
+      }
+      .postres{
+        margin-left: 20%;
+      }
+      .carta1{
+        margin-top: 5%;
+      }
+      .carta2{
+        margin-top: 5%;
+          }
+      .carta3{
+        margin-top: 5%;
+              }
+      .desayuno-lista{
+        margin-left: 10%;
+      }
+      .super-galeria{
+        margin-left: 22%;
+      }
+  
+}
+
