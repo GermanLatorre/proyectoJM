@@ -1,13 +1,27 @@
+@import "./components/variables";
+@import "./components/mixin";
+@import "./components/extend";
+
+
+
+
+
+
+
+
+
+
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: beige;
+    background-color:map-get($paleta , blanco-claro );
   }
 
   
    h1 {
-    color: black;
-    width: 1px yellow;
+    color:map-get($paleta , negro );
+    width: 1px;
     font-weight: light;
     text-align: center;
     font-size: 50px;
@@ -20,7 +34,7 @@ header {
     text-decoration: none;
     font-size: 2rem;
     align-content: center;
-    color: chocolate;
+    color: map-get($paleta , chocolate);
     font-weight: lighter;
     margin-right: 2rem;
     }
@@ -33,22 +47,22 @@ header {
     height: auto;
   }
   h1{
-    color: black;
-    width:  1px yellow;
+    color:map-get($paleta , negro );
+    width: 100%;
     font-style: light ;
     text-align: center ;
-    font-size: 50px;
-    font-family: g;
+    font-size: 70px;
+    
   }
   h2 {
-    color:chocolate;
-    -webkit-text-stroke: 1px black;
+    color:map-get($paleta , chocolate );
+    -webkit-text-stroke: 1px map-get($paleta , negro );
     font-size: 2rem;
     margin-left: 1%;
     margin-bottom: 5%;
   }
   h3{
-    color: brown;
+    color: map-get($paleta , marron);
   }
   h4{
     font-size: 2rem;
@@ -57,7 +71,7 @@ header {
     font-size: 2rem;
   }
   footer{
-    background-color: chocolate;
+    background-color:map-get($paleta , chocolate);
     display: flex;
     height: 220px;
     
@@ -117,7 +131,7 @@ header {
     .parrafo p{
       margin-left: 2%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: brown;
+      color: map-get($paleta , marron);
     }
     .web{
       margin-top: 10rem;
@@ -133,30 +147,28 @@ header {
   }
   .submenu{
     display:none;
-    background: chocolate;              
+    background:map-get($paleta , chocolate);
     width:170px;
     text-align:center; 
   }
   /*sobre nosotros*/
   .sobre-nosotros{
-    background-color: bisque;
+    background-color: map-get($paleta , blanco-claro);
   }
   .container-propio p{
-    background-color: burlywood;
+    background-color: map-get($paleta , chocolate);
     margin-left: 18%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   /*promociones*/
   .promo-ul li{
     font-size: 2rem;
-    color:chocolate;
-    -webkit-text-stroke: 1px black;
+    color: map-get($paleta, chocolate );
+    -webkit-text-stroke:map-get($paleta , negro );
     
   }
   .cartap{
-    background-color: burlywood;
-    margin-right: 20px;
-    border: 2px solid grey;
+    @include carta-style;
      
    }
 
@@ -171,7 +183,7 @@ header {
   .postres{
     margin-left: 10%;
     margin-right: 5%;
-    box-shadow:  50px chocolate;
+    box-shadow:  50px map-get($paleta , chocolate);
     transform: translate(10px 20px);
     }
   .container-promo{
@@ -181,23 +193,15 @@ header {
   
   /*infantiles*/
   .cartat{
-  
-    background-color:burlywood;
-    margin-top: 3vh;
-    
+    @include carta-style;
+
   }
         .trufas{
           margin-bottom: 5%;
           }
     
     /*promociones*/
-  .cartap{
-    background-color: burlywood;
-    margin-left: 10%;
-    border: 2px solid grey;
-   
-   }
-   
+
    
    .promociones{
     margin-bottom: 5%;
@@ -205,32 +209,26 @@ header {
    /*día del padre*/
   .carta{
 
-    background-color:burlywood;
-    margin-top: 3vh;
+    @include carta-style;
     
   }
   
   
   .desayuno-lista p{
     font-size: 2rem;
-    color: brown;
+    color:map-get($paleta , marron);
     
   }
   .desayuno-lista ul{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: chocolate;
+    color: map-get($paleta , chocolate);
   }
   .postres{
     margin-bottom: 5%;
   }
-  .btn-propio{
-    background-color: dimgray;
-    border-color: black;
-    
-  &:hover{
-    color:yellow;
-   }
-  }
+
+ 
+  
   .postres p{
     font-size: 2rem;
     
@@ -264,7 +262,7 @@ header {
   }
   /*transformaciones*/
  .header-nav a:hover{
-  color: brown;
+  color: map-get($paleta , marron);
    }
    h1:hover{
     transform:scale(1.2);
@@ -277,7 +275,7 @@ header {
       width: 120px;
       height: 120px;
       margin:0 0 200px 50px;
-      background-color: aquamarine;
+      background-color: map-get($paleta , celeste);
     
   }
   .img-pos:hover{
@@ -344,7 +342,7 @@ header {
      p{
       margin-left:30%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: brown;
+      color: map-get($paleta , marron);
       }
     }
   .video_container{
@@ -378,7 +376,7 @@ header {
       }
   .img-pos{
     width: 42%;
-    border: 1rem solid chocolate;
+    border: 1rem solid map-get($paleta , chocolate);
     border-radius: 8%;
     margin-top: 2%;
     margin-bottom: 2%;

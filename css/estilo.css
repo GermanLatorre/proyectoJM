@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.borde-redondeado, .carta, .cartat, .cartap {
+  border-radius: 20px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -7,7 +11,7 @@ header {
 
 h1 {
   color: black;
-  width: 1px yellow;
+  width: 1px;
   font-weight: light;
   text-align: center;
   font-size: 50px;
@@ -36,11 +40,10 @@ main {
 
 h1 {
   color: black;
-  width: 1px yellow;
+  width: 100%;
   font-style: light;
   text-align: center;
-  font-size: 50px;
-  font-family: g;
+  font-size: 70px;
 }
 
 h2 {
@@ -141,11 +144,11 @@ footer form {
 
 /*sobre nosotros*/
 .sobre-nosotros {
-  background-color: bisque;
+  background-color: beige;
 }
 
 .container-propio p {
-  background-color: burlywood;
+  background-color: chocolate;
   margin-left: 18%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -154,13 +157,15 @@ footer form {
 .promo-ul li {
   font-size: 2rem;
   color: chocolate;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: black;
 }
 
 .cartap {
   background-color: burlywood;
   margin-right: 20px;
-  border: 2px solid grey;
+  margin-top: 3vh;
+  margin-left: 10%;
+  border: grey;
 }
 
 img {
@@ -186,7 +191,10 @@ img {
 /*infantiles*/
 .cartat {
   background-color: burlywood;
+  margin-right: 20px;
   margin-top: 3vh;
+  margin-left: 10%;
+  border: grey;
 }
 
 .trufas {
@@ -194,12 +202,6 @@ img {
 }
 
 /*promociones*/
-.cartap {
-  background-color: burlywood;
-  margin-left: 10%;
-  border: 2px solid grey;
-}
-
 .promociones {
   margin-bottom: 5%;
 }
@@ -207,7 +209,10 @@ img {
 /*día del padre*/
 .carta {
   background-color: burlywood;
+  margin-right: 20px;
   margin-top: 3vh;
+  margin-left: 10%;
+  border: grey;
 }
 
 .desayuno-lista p {
@@ -222,14 +227,6 @@ img {
 
 .postres {
   margin-bottom: 5%;
-}
-
-.btn-propio {
-  background-color: dimgray;
-  border-color: black;
-}
-.btn-propio:hover {
-  color: yellow;
 }
 
 .postres p {
