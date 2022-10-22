@@ -4,19 +4,13 @@
 
 
 
-
-
-
-
-
-
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color:map-get($paleta , blanco-claro );
-  }
+body{
+  background-color: whitesmoke
+}
+header{
+  background-color:map-get($paleta , blanco-claro );
+ 
+}
 
   
    h1 {
@@ -27,10 +21,7 @@ header {
     font-size: 50px;
   
   }
-  nav{
-    margin-top: 10%;
-  
-   a {
+  nav a {
     text-decoration: none;
     font-size: 2rem;
     align-content: center;
@@ -38,7 +29,7 @@ header {
     font-weight: lighter;
     margin-right: 2rem;
     }
-  }
+  
   main {
     margin-top: 2%;
     width: 100%;
@@ -49,15 +40,16 @@ header {
   h1{
     color:map-get($paleta , negro );
     width: 100%;
-    font-style: light ;
+    font-style: oblique;
     text-align: center ;
-    font-size: 70px;
+    font-size: 6vh;
+
     
   }
   h2 {
     color:map-get($paleta , chocolate );
     -webkit-text-stroke: 1px map-get($paleta , negro );
-    font-size: 2rem;
+    font-size: 4vh;
     margin-left: 1%;
     margin-bottom: 5%;
   }
@@ -65,15 +57,17 @@ header {
     color: map-get($paleta , marron);
   }
   h4{
-    font-size: 2rem;
+    font-size: 1rem;
   }
   h5{
     font-size: 2rem;
   }
   footer{
-    background-color:map-get($paleta , chocolate);
     display: flex;
-    height: 220px;
+    background-color:map-get($paleta , amarillo-oscuro);
+    height: 30vh;
+    
+
     
   p{
     font-weight: bold;
@@ -83,30 +77,49 @@ header {
     font-size: 20px;
   }
   
-   img{
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    margin-left: 10%;
-   }
   
    form{
-    margin-top: 23px;
-    margin-left: 23px;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 2rem;
     
        
      }
     }
-    
-  
-      .header-logo img{
-      width: 25rem;
-    }
-    
-    .section p{
-      font-size: 2rem;
+
+    .iconos{
+      font-size: 3rem;
+      padding: 4rem;
+      margin-left: 2rem;
       
-    }
+     
+     }
+     .web{
+      font-size: 2vh;
+      margin-top: 10%;
+      padding: 2%;
+
+     }
+    
+    .nav-link{
+      text-decoration: none;
+      font-size: 2rem;
+      align-content: center;
+      color: map-get($paleta , chocolate);
+      font-weight: lighter;
+      margin-right: 2rem;
+      }
+    
+    
+    .parrafo1{
+      color:map-get($paleta , chocolate );
+    -webkit-text-stroke: 1px map-get($paleta , negro );
+    font-size: 4vh;
+    margin-left: 1%;
+    margin-bottom: 5%;
+  }
+      
+    
     
     .parallax {
       background-image: url(../img/fondo.jpg);
@@ -129,20 +142,36 @@ header {
       } 
     } 
     .parrafo p{
+      padding: 2%;
       margin-left: 2%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: map-get($paleta , marron);
+      font-size: 4vh
     }
-    .web{
-      margin-top: 10rem;
-      font-size: 1rem;
-      
+    .section-dos{
+        display: flex;
+        flex-direction: row;
+
+        img{
+           align-items: flex-start;
+           width: 100vh;
+           padding: 2%;
+        }
+        p{
+          align-items: flex-end;
+          font-size: 4vh;
+          padding: 2%;
+          color: map-get($paleta, chocolate );
+        }
+
     }
+  
     /*menu*/
   .contenedor-menu{
     display: block;
     font-size: x-large !important;
     text-align: left !important;
+    
   
   }
   .submenu{
@@ -153,13 +182,65 @@ header {
   }
   /*sobre nosotros*/
   .sobre-nosotros{
-    background-color: map-get($paleta , blanco-claro);
-  }
-  .container-propio p{
-    background-color: map-get($paleta , chocolate);
-    margin-left: 18%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+    
+  
+  .container-propio {
+    
+       p{
+      
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 4vh;
+      padding: 2%;
+       }
+       .p1{
+          display: flex;
+          flex-direction: column;
+          font-size: 4vh;
+          padding: 2%;
+          align-items: center;
+        img{
+        
+          width: 40rem;
+          height: 30rem;
+          padding: 2%;
+        }  
+       }
+      .p2{
+        display: flex;
+        padding: 2%;
+        p{
+          padding: 3%;
+        }
+      }
+      .p3{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2%;
+        img{
+          padding: 1%;
+        }
+      }
+      .p4{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        
+      }
+      .p5{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 3%;
+        p{
+          padding: 2%;
+        }
+       
+        
+      }
+      h2{
+        text-align: center;
+      }
+      }
+}
   /*promociones*/
   .promo-ul li{
     font-size: 2rem;
@@ -200,12 +281,7 @@ header {
           margin-bottom: 5%;
           }
     
-    /*promociones*/
-
-   
-   .promociones{
-    margin-bottom: 5%;
-   }
+  
    /*día del padre*/
   .carta{
 
@@ -248,10 +324,13 @@ header {
   }
   .super-galeria{
     margin-left: 2%;
+   
   
     img{
      height: 20rem;
      width: 20rem;
+
+    
     
   
     &:hover{
@@ -283,25 +362,48 @@ header {
     
   }
   
-  .container-propio{
-    font-size: 2rem;
-    margin: 0%;
+
+  
+  
+  @media only screen and (max-width: 768px) {
+
+     /*inicio*/
+     header{
+      width: 112vh;
+     }
+     main img{
+      width: 120vh;
+     }
+     footer{ 
+     
+       img{
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        margin-left: 40px;
+       
+        }
+      form{
+       width: 10%;
+        }
+      p{
+        margin-left: 5%;
+       
+      }
+    }
   
   }
-  @media only screen and (max-width: 768px) {
-  }
+  
+  
+
+   
+  
   
   @media only screen and (max-width: 576px) {
   
     /*inicio*/
-    header{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: repeat(1,1fr);
-    }
-    .header-logo img{
-      width: 7rem;
-    }
+
+   
   
   nav{
     display: flex;
@@ -315,7 +417,7 @@ header {
   
   main img{
     
-    width: 97%
+    width: 805%;
   }
   h1{
     
@@ -349,16 +451,29 @@ header {
     margin-left: 15%;
     width: 72%;
   }
-  footer img{
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 40px;
-     
+  .section-dos{
+    display: inline;
+    
   }
-   footer form{
+  footer{
+    display: flex;
+    height: 40vh;
+  
+  
+    form{
     width: 5%;
   }
+}
+.iconos{
+  display: flex;
+  font-size: 2rem;
+}
+.web{
+  display: flex;
+    font-size: 2vh;
+    padding: 1rem;
+    margin-top: 15%;
+}
 
   .postres{
     

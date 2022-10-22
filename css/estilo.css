@@ -3,9 +3,11 @@
   border-radius: 20px;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 header {
-  display: flex;
-  justify-content: space-between;
   background-color: beige;
 }
 
@@ -17,9 +19,6 @@ h1 {
   font-size: 50px;
 }
 
-nav {
-  margin-top: 10%;
-}
 nav a {
   text-decoration: none;
   font-size: 2rem;
@@ -41,15 +40,15 @@ main {
 h1 {
   color: black;
   width: 100%;
-  font-style: light;
+  font-style: oblique;
   text-align: center;
-  font-size: 70px;
+  font-size: 6vh;
 }
 
 h2 {
   color: chocolate;
   -webkit-text-stroke: 1px black;
-  font-size: 2rem;
+  font-size: 4vh;
   margin-left: 1%;
   margin-bottom: 5%;
 }
@@ -59,7 +58,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 h5 {
@@ -67,9 +66,9 @@ h5 {
 }
 
 footer {
-  background-color: chocolate;
   display: flex;
-  height: 220px;
+  background-color: burlywood;
+  height: 30vh;
 }
 footer p {
   font-weight: bold;
@@ -78,23 +77,39 @@ footer p {
   color: white 150px;
   font-size: 20px;
 }
-footer img {
-  width: 50px;
-  height: 50px;
-  margin-top: 5px;
-  margin-left: 10%;
-}
 footer form {
-  margin-top: 23px;
-  margin-left: 23px;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
-.header-logo img {
-  width: 25rem;
+.iconos {
+  font-size: 3rem;
+  padding: 4rem;
+  margin-left: 2rem;
 }
 
-.section p {
+.web {
+  font-size: 2vh;
+  margin-top: 10%;
+  padding: 2%;
+}
+
+.nav-link {
+  text-decoration: none;
   font-size: 2rem;
+  align-content: center;
+  color: chocolate;
+  font-weight: lighter;
+  margin-right: 2rem;
+}
+
+.parrafo1 {
+  color: chocolate;
+  -webkit-text-stroke: 1px black;
+  font-size: 4vh;
+  margin-left: 1%;
+  margin-bottom: 5%;
 }
 
 .parallax {
@@ -118,14 +133,27 @@ footer form {
 }
 
 .parrafo p {
+  padding: 2%;
   margin-left: 2%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: brown;
+  font-size: 4vh;
 }
 
-.web {
-  margin-top: 10rem;
-  font-size: 1rem;
+.section-dos {
+  display: flex;
+  flex-direction: row;
+}
+.section-dos img {
+  align-items: flex-start;
+  width: 100vh;
+  padding: 2%;
+}
+.section-dos p {
+  align-items: flex-end;
+  font-size: 4vh;
+  padding: 2%;
+  color: chocolate;
 }
 
 /*menu*/
@@ -143,14 +171,53 @@ footer form {
 }
 
 /*sobre nosotros*/
-.sobre-nosotros {
-  background-color: beige;
-}
-
-.container-propio p {
-  background-color: chocolate;
-  margin-left: 18%;
+.sobre-nosotros .container-propio p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 4vh;
+  padding: 2%;
+}
+.sobre-nosotros .container-propio .p1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vh;
+  padding: 2%;
+  align-items: center;
+}
+.sobre-nosotros .container-propio .p1 img {
+  width: 40rem;
+  height: 30rem;
+  padding: 2%;
+}
+.sobre-nosotros .container-propio .p2 {
+  display: flex;
+  padding: 2%;
+}
+.sobre-nosotros .container-propio .p2 p {
+  padding: 3%;
+}
+.sobre-nosotros .container-propio .p3 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 2%;
+}
+.sobre-nosotros .container-propio .p3 img {
+  padding: 1%;
+}
+.sobre-nosotros .container-propio .p4 {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+.sobre-nosotros .container-propio .p5 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3%;
+}
+.sobre-nosotros .container-propio .p5 p {
+  padding: 2%;
+}
+.sobre-nosotros .container-propio h2 {
+  text-align: center;
 }
 
 /*promociones*/
@@ -198,11 +265,6 @@ img {
 }
 
 .trufas {
-  margin-bottom: 5%;
-}
-
-/*promociones*/
-.promociones {
   margin-bottom: 5%;
 }
 
@@ -285,21 +347,29 @@ h1:hover {
   animation: cambioDeColores 5s;
 }
 
-.container-propio {
-  font-size: 2rem;
-  margin: 0%;
-}
-
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   /*inicio*/
   header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    width: 112vh;
   }
-  .header-logo img {
-    width: 7rem;
+  main img {
+    width: 120vh;
   }
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 40px;
+  }
+  footer form {
+    width: 10%;
+  }
+  footer p {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /*inicio*/
   nav {
     display: flex;
     flex-direction: column;
@@ -309,7 +379,7 @@ h1:hover {
     font-size: 100%;
   }
   main img {
-    width: 97%;
+    width: 805%;
   }
   h1 {
     margin-left: 30%;
@@ -339,14 +409,25 @@ h1:hover {
     margin-left: 15%;
     width: 72%;
   }
-  footer img {
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 40px;
+  .section-dos {
+    display: inline;
+  }
+  footer {
+    display: flex;
+    height: 40vh;
   }
   footer form {
     width: 5%;
+  }
+  .iconos {
+    display: flex;
+    font-size: 2rem;
+  }
+  .web {
+    display: flex;
+    font-size: 2vh;
+    padding: 1rem;
+    margin-top: 15%;
   }
   .postres {
     grid-template-columns: repeat(1, 1fr);
