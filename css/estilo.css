@@ -13,7 +13,7 @@ header {
 
 h1 {
   color: black;
-  width: 1px;
+  width: 2px;
   font-weight: light;
   text-align: center;
   font-size: 50px;
@@ -51,6 +51,7 @@ h2 {
   font-size: 4vh;
   margin-left: 1%;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 h3 {
@@ -66,9 +67,9 @@ h5 {
 }
 
 footer {
-  display: flex;
+  display: grid;
+  grid-template: 10rem/auto auto auto auto;
   background-color: burlywood;
-  height: 30vh;
 }
 footer p {
   font-weight: bold;
@@ -76,11 +77,14 @@ footer p {
   font-display: center;
   color: white 150px;
   font-size: 20px;
+  margin-top: 5rem;
+  margin-left: 1rem;
 }
 footer form {
   flex-direction: row;
   padding: 1rem;
   border-radius: 2rem;
+  margin-top: 4rem;
 }
 
 .iconos {
@@ -91,7 +95,7 @@ footer form {
 
 .web {
   font-size: 2vh;
-  margin-top: 10%;
+  margin-top: 5rem;
   padding: 2%;
 }
 
@@ -140,13 +144,19 @@ footer form {
   font-size: 4vh;
 }
 
+.parrafo-index {
+  font-size: 3vh;
+  color: chocolate;
+  padding: 2%;
+}
+
 .section-dos {
   display: flex;
   flex-direction: row;
 }
 .section-dos img {
   align-items: flex-start;
-  width: 100vh;
+  width: 100%;
   padding: 2%;
 }
 .section-dos p {
@@ -156,71 +166,76 @@ footer form {
   color: chocolate;
 }
 
-/*menu*/
+/*-----------------------------------------------menu------------------------------------*/
 .contenedor-menu {
-  display: block;
-  font-size: x-large !important;
-  text-align: left !important;
+  font-size: x-large;
 }
 
-.submenu {
-  display: none;
-  background: chocolate;
-  width: 170px;
+.grid-salados {
+  display: grid;
+  grid-template: 23rem/auto auto;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-left: 10rem;
+}
+
+.grid-dulces {
+  display: grid;
+  grid-template: 36rem/auto auto;
+  padding: 10rem;
   text-align: center;
 }
 
-/*sobre nosotros*/
-.sobre-nosotros .container-propio p {
+/*-----------------------------------------sobre nosotros---------------------------------*/
+.container-propio p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 4vh;
-  padding: 2%;
 }
-.sobre-nosotros .container-propio .p1 {
+.container-propio .p1 {
   display: flex;
   flex-direction: column;
   font-size: 4vh;
   padding: 2%;
   align-items: center;
 }
-.sobre-nosotros .container-propio .p1 img {
+.container-propio .p1 img {
   width: 40rem;
   height: 30rem;
   padding: 2%;
 }
-.sobre-nosotros .container-propio .p2 {
+.container-propio .p2 {
   display: flex;
   padding: 2%;
 }
-.sobre-nosotros .container-propio .p2 p {
+.container-propio .p2 p {
   padding: 3%;
 }
-.sobre-nosotros .container-propio .p3 {
+.container-propio .p3 {
   display: flex;
   flex-direction: row-reverse;
   padding: 2%;
 }
-.sobre-nosotros .container-propio .p3 img {
+.container-propio .p3 img {
   padding: 1%;
 }
-.sobre-nosotros .container-propio .p4 {
+.container-propio .p4 {
   display: flex;
   flex-direction: row;
   padding: 2%;
 }
-.sobre-nosotros .container-propio .p5 {
+.container-propio .p5 {
   display: flex;
   flex-direction: row-reverse;
   padding: 3%;
 }
-.sobre-nosotros .container-propio .p5 p {
+.container-propio .p5 p {
   padding: 2%;
 }
-.sobre-nosotros .container-propio h2 {
+.container-propio h2 {
   text-align: center;
 }
 
-/*promociones*/
+/*----------------------------------------------promociones---------------------------------------*/
 .promo-ul li {
   font-size: 2rem;
   color: chocolate;
@@ -243,6 +258,10 @@ img {
   margin-bottom: 5%;
 }
 
+.card.cartap {
+  width: 25rem !important;
+}
+
 .postres {
   margin-left: 10%;
   margin-right: 5%;
@@ -255,7 +274,7 @@ img {
   font-size: 1rem;
 }
 
-/*infantiles*/
+/*----------------------------------------------infantiles-----------------------------------------*/
 .cartat {
   background-color: burlywood;
   margin-right: 20px;
@@ -268,7 +287,7 @@ img {
   margin-bottom: 5%;
 }
 
-/*día del padre*/
+/*---------------------------------------------día del padre-------------------------------------*/
 .carta {
   background-color: burlywood;
   margin-right: 20px;
@@ -299,7 +318,7 @@ img {
   font-size: 1rem;
 }
 
-/*galería*/
+/*---------------------------------------------galería-------------------------------------------*/
 .contenedor-galeria img {
   width: 20rem;
   height: 20rem;
@@ -311,7 +330,8 @@ img {
 }
 
 .super-galeria {
-  margin-left: 2%;
+  display: grid;
+  grid-template: 20rem/auto auto auto auto;
 }
 .super-galeria img {
   height: 20rem;
@@ -322,7 +342,7 @@ img {
   transition: all 3s;
 }
 
-/*transformaciones*/
+/*------------------------transformaciones--------------------------*/
 .header-nav a:hover {
   color: brown;
 }
@@ -347,42 +367,83 @@ h1:hover {
   animation: cambioDeColores 5s;
 }
 
-@media only screen and (max-width: 768px) {
+/*------------------------------------------------TABLET 768px-------------------------------------*/
+@media only screen and (max-width: 1000px) {
   /*inicio*/
-  header {
-    width: 112vh;
+  a {
+    font-size: 100%;
   }
-  main img {
-    width: 120vh;
+  .carta {
+    width: 15rem;
   }
-  footer img {
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
-    margin-left: 40px;
+  h2 {
+    display: flex;
+    font-size: 150%;
+    padding: 2%;
   }
-  footer form {
-    width: 10%;
+  section p {
+    width: 65%;
+    margin-left: 15%;
   }
-  footer p {
-    margin-left: 5%;
+  .section-dos {
+    flex-direction: column;
+    /*menu*/
+  }
+  .section-dos footer {
+    display: grid;
+    grid-template: 5rem/auto auto;
+    background-color: burlywood;
+  }
+  .section-dos footer p {
+    font-weight: bold;
+    font-size: 10px;
+    font-display: center;
+    color: white 150px;
+    font-size: 20px;
+    margin-top: 5rem;
+    margin-left: 1rem;
+  }
+  .section-dos footer form {
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+  }
+  .iconos {
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin-left: 2rem;
+  }
+  /*Galeria*/
+  .super-galeria {
+    display: grid;
+    padding: 10%;
+    grid-template: 20rem/auto auto auto;
+  }
+  .grid-dulces, .grid-salados {
+    grid-template: 36rem/auto;
   }
 }
+/*----------------------------------------------------MOBILE 576px-------------------------------------*/
 @media only screen and (max-width: 576px) {
   /*inicio*/
+  header {
+    width: 100%;
+  }
   nav {
     display: flex;
     flex-direction: column;
-    margin-right: 30%;
   }
   nav a {
     font-size: 100%;
   }
   main img {
-    width: 805%;
+    width: 10px;
+  }
+  .carta {
+    width: 15rem;
   }
   h1 {
-    margin-left: 30%;
     font-size: 200%;
     display: inline;
   }
@@ -410,11 +471,24 @@ h1:hover {
     width: 72%;
   }
   .section-dos {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+  }
+  .section-dos img {
+    align-items: flex-start;
+    width: vh;
+    padding: 2%;
+  }
+  .section-dos p {
+    display: none;
+    font-size: 4vh;
+    padding: 2%;
+    color: chocolate;
   }
   footer {
     display: flex;
-    height: 40vh;
+    flex-direction: column;
+    width: 100%;
   }
   footer form {
     width: 5%;
@@ -425,9 +499,12 @@ h1:hover {
   }
   .web {
     display: flex;
-    font-size: 2vh;
+    font-size: 1vh;
     padding: 1rem;
     margin-top: 15%;
+  }
+  .card.cartap {
+    width: 80% !important;
   }
   .postres {
     grid-template-columns: repeat(1, 1fr);
@@ -453,6 +530,37 @@ h1:hover {
     flex-direction: column;
     margin-left: 15%;
   }
+  /*menu*/
+  .grid-dulces {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-salados {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  /*sobre nosotros*/
+  .sobre-nosotros .container-propio p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 3vh;
+  }
+  .sobre-nosotros .container-propio .p2, .sobre-nosotros .container-propio .p3, .sobre-nosotros .container-propio .p4, .sobre-nosotros .container-propio .p5 {
+    flex-direction: column;
+  }
+  .sobre-nosotros .container-propio .p1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    padding: 1%;
+    align-items: center;
+  }
+  .sobre-nosotros .container-propio .p1 img {
+    width: 20rem;
+    height: 30rem;
+    padding: 1%;
+  }
   /*promociones*/
   .carta1t {
     margin-top: 5%;
@@ -473,7 +581,10 @@ h1:hover {
     margin-top: 5%;
   }
   .postres {
-    margin-left: 20%;
+    margin-left: 0;
+  }
+  .postres img {
+    width: 100%;
   }
   .carta1 {
     margin-top: 5%;
@@ -485,10 +596,12 @@ h1:hover {
     margin-top: 5%;
   }
   .desayuno-lista {
-    margin-left: 19%;
+    padding: 1rem;
   }
   .super-galeria {
-    margin-left: 22%;
+    display: grid;
+    padding: 5%;
+    grid-template: 20rem/auto;
   }
 }
 

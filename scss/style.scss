@@ -15,7 +15,7 @@ header{
   
    h1 {
     color:map-get($paleta , negro );
-    width: 1px;
+    width: 2px;
     font-weight: light;
     text-align: center;
     font-size: 50px;
@@ -52,36 +52,38 @@ header{
     font-size: 4vh;
     margin-left: 1%;
     margin-bottom: 5%;
+    text-align: center;
   }
-  h3{
+  h3 {
     color: map-get($paleta , marron);
   }
-  h4{
+  h4 {
     font-size: 1rem;
   }
-  h5{
+  h5 {
     font-size: 2rem;
   }
-  footer{
-    display: flex;
+  footer {
+    display: grid;
+    grid-template: 10rem / auto auto auto auto;
     background-color:map-get($paleta , amarillo-oscuro);
-    height: 30vh;
-    
-
-    
-  p{
+      
+  p {
     font-weight: bold;
     font-size: 20px;
     font-display:center;
     color: white 150px ;
     font-size: 20px;
+    margin-top: 5rem;
+    margin-left: 1rem;
   }
   
   
-   form{
+   form {
     flex-direction: row;
     padding: 1rem;
     border-radius: 2rem;
+    margin-top: 4rem;
     
        
      }
@@ -91,12 +93,10 @@ header{
       font-size: 3rem;
       padding: 4rem;
       margin-left: 2rem;
-      
-     
      }
      .web{
       font-size: 2vh;
-      margin-top: 10%;
+      margin-top: 5rem;
       padding: 2%;
 
      }
@@ -148,13 +148,18 @@ header{
       color: map-get($paleta , marron);
       font-size: 4vh
     }
+    .parrafo-index{
+      font-size: 3vh;
+      color: map-get($paleta, chocolate );
+      padding: 2%;
+    }
     .section-dos{
         display: flex;
         flex-direction: row;
 
         img{
            align-items: flex-start;
-           width: 100vh;
+           width: 100%;
            padding: 2%;
         }
         p{
@@ -166,22 +171,32 @@ header{
 
     }
   
-    /*menu*/
+  /*-----------------------------------------------menu------------------------------------*/
   .contenedor-menu{
-    display: block;
-    font-size: x-large !important;
-    text-align: left !important;
+    
+    font-size: x-large; 
+    
     
   
   }
-  .submenu{
-    display:none;
-    background:map-get($paleta , chocolate);
-    width:170px;
-    text-align:center; 
+  .grid-salados{
+    display: grid;
+    grid-template: 23rem /auto auto;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding-left: 10rem;
+    
+    
   }
-  /*sobre nosotros*/
-  .sobre-nosotros{
+  .grid-dulces{
+    display: grid;
+    grid-template:36rem/auto auto;
+    padding: 10rem;
+    text-align: center;
+  
+  }
+  /*-----------------------------------------sobre nosotros---------------------------------*/
+  
     
   
   .container-propio {
@@ -190,7 +205,7 @@ header{
       
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 4vh;
-      padding: 2%;
+      
        }
        .p1{
           display: flex;
@@ -240,8 +255,8 @@ header{
         text-align: center;
       }
       }
-}
-  /*promociones*/
+
+  /*----------------------------------------------promociones---------------------------------------*/
   .promo-ul li{
     font-size: 2rem;
     color: map-get($paleta, chocolate );
@@ -260,7 +275,9 @@ header{
    .promociones{
      margin-bottom: 5%;
    }
-  
+   .card.cartap{
+    width: 25rem !important;
+  }
   .postres{
     margin-left: 10%;
     margin-right: 5%;
@@ -272,7 +289,7 @@ header{
     font-size: 1rem;
   }
   
-  /*infantiles*/
+  /*----------------------------------------------infantiles-----------------------------------------*/
   .cartat{
     @include carta-style;
 
@@ -282,7 +299,7 @@ header{
           }
     
   
-   /*día del padre*/
+   /*---------------------------------------------día del padre-------------------------------------*/
   .carta{
 
     @include carta-style;
@@ -312,7 +329,7 @@ header{
   .container-promo {
     font-size: 1rem;
   }
-   /*galería*/
+   /*---------------------------------------------galería-------------------------------------------*/
 .contenedor-galeria img{
   width: 20rem;
   height: 20rem;
@@ -322,13 +339,14 @@ header{
     font-size: 2rem;
     margin-left: 15%;
   }
-  .super-galeria{
-    margin-left: 2%;
-   
+  .super-galeria {
+  display: grid;
+  grid-template: 20rem /auto auto auto auto;
   
-    img{
+   img{
      height: 20rem;
      width: 20rem;
+    
 
     
     
@@ -339,7 +357,7 @@ header{
      }
     }
   }
-  /*transformaciones*/
+  /*------------------------transformaciones--------------------------*/
  .header-nav a:hover{
   color: map-get($paleta , marron);
    }
@@ -361,54 +379,101 @@ header{
       animation: cambioDeColores 5s;
     
   }
+
   
 
   
-  
-  @media only screen and (max-width: 768px) {
+  /*------------------------------------------------TABLET 768px-------------------------------------*/
+  @media only screen and (max-width: 1000px) {
 
      /*inicio*/
-     header{
-      width: 112vh;
-     }
-     main img{
-      width: 120vh;
-     }
-     footer{ 
-     
-       img{
-        width: 30px;
-        height: 30px;
-        margin-top: 5px;
-        margin-left: 40px;
-       
+  
+        a{
+      font-size: 100%;
         }
-      form{
-       width: 10%;
-        }
-      p{
-        margin-left: 5%;
-       
+      
+      .carta{
+        width: 15rem;
       }
-    }
+      
+      h2{
+        display: flex;
+        font-size: 150%;
+        padding: 2%;
+      }
+    
+      section p{  
+       width: 65%;
+       margin-left: 15%;
+      
+      }
+    
+    .section-dos{
+      flex-direction: column;
   
-  }
-  
-  
-
+      footer {
+        display: grid;
+        grid-template: 5rem / auto auto ;
+        background-color:map-get($paleta , amarillo-oscuro);
+          
+      p {
+        font-weight: bold;
+        font-size: 10px;
+        font-display:center;
+        color: white 150px ;
+        font-size: 20px;
+        margin-top: 5rem;
+        margin-left: 1rem;
+      }
+      
+      
+       form {
+        flex-direction: row;
+        padding: 1rem;
+        border-radius: 2rem;
+        margin-top: 4rem;
+        
+           
+         }
+        
+       
+       }
+       /*menu*/
+      }
+      .iconos {
+       font-size: 1.5rem;
+       padding: 2rem;
+       margin-left: 2rem;
    
-  
+      
+      }
+  /*Galeria*/
+  .super-galeria{
+    display: grid;
+    padding: 10%;
+    grid-template: 20rem/auto auto auto;
+  }
+
+  .grid-dulces, .grid-salados {
+    grid-template: 36rem/auto;
+  }
+}
+
+
+  /*----------------------------------------------------MOBILE 576px-------------------------------------*/
   
   @media only screen and (max-width: 576px) {
   
     /*inicio*/
 
-   
+   header{
+    width: 100%;
+   }
   
   nav{
     display: flex;
     flex-direction: column;
-    margin-right: 30%;
+    
   
       a{
     font-size: 100%;
@@ -417,11 +482,14 @@ header{
   
   main img{
     
-    width: 805%;
+    width: 10px;
+  }
+  .carta{
+    width: 15rem;
   }
   h1{
     
-    margin-left: 30%;
+
     font-size: 200%;
     display: inline;
   }
@@ -451,13 +519,30 @@ header{
     margin-left: 15%;
     width: 72%;
   }
+
   .section-dos{
-    display: inline;
-    
-  }
+    display: flex;
+    flex-direction: row;
+
+    img{
+       align-items: flex-start;
+       width: vh;
+       padding: 2%;
+    }
+    p{
+      display: none;
+      font-size: 4vh;
+      padding: 2%;
+      color: map-get($paleta, chocolate );
+    }
+
+}
+
+ 
   footer{
     display: flex;
-    height: 40vh;
+    flex-direction: column;
+    width: 100%;
   
   
     form{
@@ -470,11 +555,13 @@ header{
 }
 .web{
   display: flex;
-    font-size: 2vh;
+    font-size: 1vh;
     padding: 1rem;
     margin-top: 15%;
 }
-
+  .card.cartap{
+    width: 80% !important;
+  }
   .postres{
     
     grid-template-columns: repeat(1,1fr);
@@ -502,7 +589,47 @@ header{
       flex-direction: column;
       margin-left: 15%;
     }
-   
+    /*menu*/
+    .grid-dulces{
+      padding: 0%;
+      display: flex;
+      flex-direction: column;
+    }
+    .grid-salados{
+      padding: 0%;
+      display: flex;
+      flex-direction: column;
+    }
+    /*sobre nosotros*/
+    .sobre-nosotros{
+    
+  
+      .container-propio {
+        
+           p{
+          
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 3vh;
+          
+           }
+           .p2, .p3, .p4, .p5 {
+            flex-direction: column;
+           }
+           .p1{
+              display: flex;
+              flex-direction: column;
+              font-size: 3vh;
+              padding: 1%;
+              align-items: center;
+            img{
+            
+              width: 20rem;
+              height: 30rem;
+              padding: 1%;
+            }  
+           }
+          }
+        }
     /*promociones*/
   
     .carta1t{
@@ -524,7 +651,10 @@ header{
       margin-top: 5%;
         }
         .postres{
-          margin-left: 20%;
+          margin-left: 0;
+          img {
+            width: 100%;
+          }
         }
         .carta1{
           margin-top: 5%;
@@ -536,10 +666,13 @@ header{
           margin-top: 5%;
                 }
         .desayuno-lista{
-          margin-left: 19%;
+          padding: 1rem;
         }
         .super-galeria{
-          margin-left: 22%;
+          display: grid;
+          padding: 5%;
+          grid-template: 20rem/auto;
         }
     
   }
+ 
