@@ -46,3 +46,4 @@ function initPrecio() {
   selectMoneda.innerHTML = monedaOptions;
   divSimulador.style.visibility = "visible";
 }
+
