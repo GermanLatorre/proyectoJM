@@ -31,11 +31,10 @@ function operar(primerNumero, operacion, segundoNumero) {
 const listaDeTortasDulces= ['chocolate','frutillas','lemon pie','chaja'];
 const listaDeTortasSaladas= ['zapallito','fiambre','cebolla','pascualina'];
 
-const listaDeTortas= [listaDeTortasDulces.concat(listaDeTortasSaladas)] 
+const listaDeTortas= [listaDeTortasDulces.concat(listaDeTortasSaladas)];
 console.log(listaDeTortasDulces);
 console.log(listaDeTortasSaladas);
 console.log(listaDeTortas);
 
 listaDeTortas.push('empanadas');
 console.log(listaDeTortas);
-

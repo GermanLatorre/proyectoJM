@@ -10,6 +10,16 @@ function enviarContacto(email, nombre) {
     alert("email y/o nombre incompleto");
   }
 }
+
+function agregarAlPedido() {
+let test = document.getElementById("jorgito"); 
+  alert("se agrego tu pedido ya " + test.value);
+
+
+
+
+}
+
 function calcularPrecio() {
   let selectKilos = document.getElementById("selectKilos").value;
   let selectMoneda = document.getElementById("selectMoneda").value;
