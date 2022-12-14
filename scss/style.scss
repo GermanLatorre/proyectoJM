@@ -175,6 +175,16 @@ header{
         }
 
     }
+    .pedido{
+      font-size: 3vh;
+      color: map-get($paleta, chocolate );
+      padding: 2%;
+    }
+    .simular{
+      font-size: 3vh;
+      color: map-get($paleta, chocolate );
+      padding: 2%;
+    }
   
   /*-----------------------------------------------menu------------------------------------*/
   .contenedor-menu{

@@ -1,4 +1,4 @@
-function calculadora() {
+/*function calculadora() {
     let primerNumero = parseInt(window.prompt('Ingrese un numero'));
     let operacion = window.prompt('Seleccione operacion [SUMA, RESTA, MULTIPLICACION, DIVISION, RESTO]')
     let segundoNumero = parseInt(window.prompt('Seleccione el segundo numero a operar'));
@@ -27,6 +27,7 @@ function operar(primerNumero, operacion, segundoNumero) {
         return resultado;
     }
 }
+*/
 //lista de tortas
 const listaDeTortasDulces= ['chocolate','frutillas','lemon pie','chaja'];
 const listaDeTortasSaladas= ['zapallito','fiambre','cebolla','pascualina'];

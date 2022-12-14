@@ -1,19 +1,20 @@
 function enviarContacto(email, nombre) {
   let emailInput = document.getElementById("emailId");
   let nombreInput = document.getElementById("nombreId");
-
+  const mensaje=document.getElementById("mensaje");
   if (email.length > 0 && nombre.length > 0) {
-    alert("mensaje enviado correctamente");
+    mensaje.innerText= "mensaje enviado correctamente";
     emailInput.value = "";
     nombreInput.value = "";
   } else {
-    alert("email y/o nombre incompleto");
+    mensaje.innerText= "email y/o nombre incompleto";
   }
 }
 
 function agregarAlPedido() {
+  const mensaje=document.getElementById("mensaje");
 let test = document.getElementById("jorgito"); 
-  alert("se agrego tu pedido ya " + test.value);
+mensaje.innerText= "se agrego tu pedido ya " + test.value;
 
 
 
@@ -56,4 +57,5 @@ function initPrecio() {
   selectMoneda.innerHTML = monedaOptions;
   divSimulador.style.visibility = "visible";
 }
+
 

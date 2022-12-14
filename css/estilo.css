@@ -66,6 +66,11 @@ h5 {
   font-size: 2rem;
 }
 
+.pedido {
+  color: white 150px;
+  font-size: 20px;
+}
+
 footer {
   display: grid;
   grid-template: 10rem/auto auto auto auto;
@@ -164,6 +169,18 @@ footer form {
   font-size: 4vh;
   padding: 2%;
   color: chocolate;
+}
+
+.pedido {
+  font-size: 3vh;
+  color: chocolate;
+  padding: 2%;
+}
+
+.simular {
+  font-size: 3vh;
+  color: chocolate;
+  padding: 2%;
 }
 
 /*-----------------------------------------------menu------------------------------------*/

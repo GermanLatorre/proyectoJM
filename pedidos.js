@@ -1,4 +1,5 @@
-let arrayPedidos=[];
+window.localStorage.setItem("pedidos", JSON.stringify([]));
+
 
 function realizarPedido() {
     const nombre= document.getElementById("nombreUsuario").value;
@@ -60,8 +61,9 @@ function cargarTortas(){
 document.addEventListener("DOMContentLoaded",cargarTortas,false);
 
 function cargarPedidos(pedido){
-    
+    let arrayPedidos = JSON.parse(window.localStorage.getItem("pedidos"));
  arrayPedidos.push(pedido);
+ window.localStorage.setItem("pedidos",JSON.stringify(arrayPedidos));
  const divListaDePedidos= document.getElementById("listadoDePedidos");
  let parrafoPedidos="";
  for(let i=0; i<arrayPedidos.length; i++){
@@ -69,3 +71,7 @@ function cargarPedidos(pedido){
  }
  divListaDePedidos.innerHTML=parrafoPedidos;
 }
+
+
+
+
