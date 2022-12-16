@@ -14,7 +14,7 @@ function enviarContacto(email, nombre) {
 function agregarAlPedido() {
   const mensaje=document.getElementById("mensaje");
 let test = document.getElementById("jorgito"); 
-mensaje.innerText= "se agrego tu pedido ya " + test.value;
+mensaje.innerText= "se agrego tu pedido  " + test.value;
 
 
 

@@ -1,0 +1,111 @@
+[
+    {
+     "titulo":"Muffins cocinados al horno en moldes al uso, presentan una base cilíndrica y una superficie más ancha, con forma de hongo.",
+     "precio":500,
+     "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+     "id": 1,
+     "categoria": "infantiles"
+ 
+    },
+    {
+        "titulo":"Kake pop y clasicas trufas rellenas con un delicioso chocolate suizo y un dulce de leche artesanal.",
+        "precio":450,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 2,
+        "categoria": "infantiles"
+    
+       },
+       {
+        "titulo":"Torta de chocolate recubierta con galletitas obleas de vainilla y chocolate.Techo de confites de colores rellenos de chocolate.",
+        "precio":450,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 3,
+        "categoria": "infantiles"
+    
+       },
+       {
+        "titulo":"Exquisitas galletas dulces con imagenes de animales.",
+        "precio":350,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 4,
+        "categoria": "infantiles"
+    
+       },
+       {
+        "titulo":"Divertidas galletitas dulces bañadas con un delicioso caramelo de miel artesanal.",
+        "precio":350,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 5,
+        "categoria": "infantiles"
+    
+       },
+       {
+        "titulo":"Galletitas dulces individuales ideales para fiestas de cumpleaños infantiles.",
+        "precio":350,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 6,
+        "categoria": "infantiles"
+    
+       },
+       {
+        "titulo":"Super desayuno en el día del padre.",
+        "precio":800,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "desayunos"
+    
+       },
+       {
+        "titulo":"Delicioso desayuno para papá en su día.",
+        "precio":800,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "desayunos"
+    
+       },{
+        "titulo":"Bandeja sorpresa para regalar a papa.",
+        "precio":800,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "desayunos"
+    
+       },{
+        "titulo":"Biscochuelo blanco con chantilly y frutillas.",
+        "precio":200,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "postres"
+    
+       },{
+        "titulo":"Biscochuelo de chocolate con mousse de menta.",
+        "precio":200,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "postres"
+       },{
+        "titulo":"Biscochuelo de vainilla con durazno y chantilly.",
+        "precio":200,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "postres"
+       },{
+        "titulo":"Biscochuelo de chocolate blanco con chantilly y frutillas.",
+        "precio":200,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "postres"
+       },{
+        "titulo":"Biscochuelo blanco con trozos de galletita de chocolate.",
+        "precio":200,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "postres"
+       },{
+        "titulo":"Biscochuelo de chocolate con galletitas y mouse de menta.",
+        "precio":200,
+        "urlImage": "https://d320djwtwnl5uo.cloudfront.net/recetas/cover/muffi_4yrOJlw1IBVDZzGNMsEa03Xjg2WtiA.png",
+        "id": 1,
+        "categoria": "postres"
+       }
+
+]

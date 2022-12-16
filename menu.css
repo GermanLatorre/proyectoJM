@@ -1,0 +1,34 @@
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: chocolate;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: auto;
+    
+    animation: spin 1s linear infinite;
+  }
+  .promociones {
+    font-size: 3vh;
+      color: chocolate;
+      padding: 2%;
+  }
+  .promos{
+    font-size: 3vh;
+      color: chocolate;
+      padding: 2%;
+  }
+  .carta p{
+    font-size: 4vh;
+      color: chocolate;
+      padding: 2%;
+  }
